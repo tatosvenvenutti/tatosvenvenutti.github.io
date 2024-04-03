@@ -224,6 +224,11 @@ html {
         transition: linear 2s;
     }
 
+img {
+    width: 300px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
