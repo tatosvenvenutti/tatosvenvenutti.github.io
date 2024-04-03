@@ -1,0 +1,304 @@
+/* ----------Header*/
+/* ----------------------------------------*/
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40vh;
+    background-color: #35434dff;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('../SiteImages/LePesteNoire_Screenshot_1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-3 {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('../SiteImages/Bird_Wars_Screenshot_1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-4 {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('../SiteImages/TeamDDM_Screenshot_5.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text-container {
+    height: calc(80% - 9rem);
+    display: flex;
+    align-items: center;
+}
+
+    .header-text-container p {
+        font: 2.4rem;
+        margin: 1rem 0 2rem;
+    }
+
+
+body {
+    color: beige;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    background-color: var(--navy-blue);
+}
+/* ----------------------------------------*/
+/*----------Basic Setup*/
+/* ----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid var(--gold);
+    font: 2rem;
+}
+
+section {
+    padding: 10rem 0;
+}
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h1 {
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+    h2::after {
+        content: "";
+        display: block;
+        height: 0.3rem;
+        width: 12rem;
+        margin-top: 1rem;
+        background-color: var(--gold);
+    }
+
+h3 {
+    font-size: var(--font-size-normal);
+    margin-bottom: var(--gutter-small);
+}
+
+    h3::after {
+        content: "";
+        display: block;
+        height: 0.3rem;
+        width: 12rem;
+        margin-top: 1rem;
+        background-color: var(--gold);
+    }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6rem;
+    height: 9rem;
+}
+
+    nav a {
+        font-size: 2.2rem;
+    }
+
+html {
+    font-size: 62.5%;
+}
+
+/*Root*/
+:root {
+    --font-size-small: 1.8rem;
+    --font-size-normal: 2.2rem;
+    --font-size-medium: 2.8rem;
+    --font-size-medium-1: 3.6rem;
+    --font-size-large: 5.5rem;
+    --font-size-huge: 7.5rem;
+    --font-stack: 'Hk Grotesk', sans-serif;
+    --line-height-normal: 1.7;
+    --line-height-small: 1.2;
+    --black: #000;
+    --pink: #ff3258;
+    --white: #f0e9f2;
+    --white-1: #e5e5e6da;
+    --gold: #cea630;
+    --navy-blue: #00375eff;
+    --container-max-width: 1180px;
+    --container-normal-width: 800px;
+    --container-medium-width: 700px;
+    --container-small-width: 500px;
+    --gutter-huge: 12rem;
+    --gutter-medium: 6rem;
+    --gutter-normal: 3rem;
+    --gutter-small-1: 2.5rem;
+    --gutter-small: 2rem;
+    --border-light: 1px solid rgb(36, 35, 35);
+    --fs-h1: 7.5rem;
+    --fs-h2: 3rem;
+}
+
+/* --------------------------------------- */
+/* ----- Footer ----- */
+/* --------------------------------------- */
+
+.footer {
+    text-align: center;
+    padding: var(--gutter-medium) 0 var(--gutter-normal);
+}
+
+.footer__social-links {
+    display: flex;
+    justify-content: center;
+    padding: var(--gutter-normal) 0;
+    list-style: none;
+}
+
+.footer__social-link-item:not(:last-of-type) {
+    margin-right: var(--gutter-small);
+}
+
+.footer__social-image {
+    height: 4rem;
+}
+
+.footer__github-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+    .footer__github-buttons iframe {
+        height: 2.5rem;
+        width: 84px;
+        transform: translateY(3px);
+    }
+
+@media(max-width: 500px) {
+    .footer {
+        padding: var(--gutter-medium) 0;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Image ----- */
+/* --------------------------------------- */
+
+.small-image {
+    height: 50%;
+    width: 50%;
+    opacity: 75%;
+    right: 20px;
+}
+
+    .small-image img:hover {
+        opacity: 1;
+        transform: scale(1.2);
+        transition: linear 2s;
+    }
+
+/* --------------------------------------- */
+/* ----- About ----- */
+/* --------------------------------------- */
+
+.about__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .about__content {
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
+}
+
+.about__photo-container {
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(min-width: 901px) {
+    .about__text {
+        flex: 0 0 35%;
+    }
+
+    .about__photo-container {
+        flex: 1;
+        margin: 0 var(--gutter-huge) 0 0;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Link ----- */
+/* --------------------------------------- */
+
+.link {
+    font-size: 3em;
+}
+
+    .link a {
+        text-decoration: underline;
+        color: white;
+    }
+
+/* --------------------------------------- */
+/* ----- Resume ----- */
+/* --------------------------------------- */
+
+.resume-download {
+    margin-bottom: 2%;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+    .resume-download a {
+        color: white;
+        font-family: Consolas;
+        font-size: 0;
+        margin: 1%;
+        display: inline;
+    }
+
+    .resume-download img {
+        width: 10%; 
+    }
+
+.resume {
+    text-align: center;
+    color: white;
+}
+
+    .resume img {
+        width: 50%;
+    }
