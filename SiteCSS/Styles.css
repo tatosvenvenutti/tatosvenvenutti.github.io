@@ -119,6 +119,20 @@ h3 {
         background-color: var(--gold);
     }
 
+h4 {
+    font-size: var(--font-size-normal);
+    margin-bottom: var(--gutter-small);
+}
+
+    h4::after {
+        content: "";
+        display: block;
+        height: 0.3rem;
+        width: 80rem;
+        margin-top: 1rem;
+        background-color: var(--gold);
+    }
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -205,6 +219,10 @@ html {
     .footer {
         padding: var(--gutter-medium) 0;
     }
+}
+
+p {
+    color: snow;
 }
 
 /* --------------------------------------- */
