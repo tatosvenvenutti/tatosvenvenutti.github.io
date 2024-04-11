@@ -3,7 +3,7 @@
 header {
     display: flex;
     flex-direction: row-reverse;
-    height: 40vh;
+    height: 35vh;
     background-color: #35434dff;
     background-size: cover;
     background-position: center;
