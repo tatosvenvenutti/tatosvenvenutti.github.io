@@ -169,7 +169,7 @@ main {
 
 .project-item {
     position: relative;
-    width: calc(33.333% - 1em);
+    width: calc(28% - 1em);
 }
 
     .project-item img {
