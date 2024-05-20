@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <link rel="stylesheet" href="../SiteCSS/Styles.css" />
-
+    <link rel="stylesheet" href="../SiteCSS/Project.css" />
     <meta charset="utf-8">
     <meta name="description" content="My Portfolio" />
     <meta name="author" content="Venvenutti Porfolio" />
-
     <link rel="icon" type="image/svg" href="../SiteImages/Website_Logo.png" />
-    <!-- Put your site title here -->
-    <title>
-        Michael Venvenutti | Bird Wars
-    </title>
+    <title>Michael Venvenutti | Run-n-Dungeon</title>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="row">
+        <div class="header-content">
+            <<!--div class="header-text">
+                <h1>Your Name</h1>
+                <p>Run-N-Dungeon</p>
+            </div>-->
             <nav>
-                <div class="link">
-                    <a href="../index.html">Home</a>
-                    <a href="../index.html#portfolio">Projects</a>
-                    <a href="SitePages/MiniProjects.html">Mini Projects</a>
-                    <a href="../index.html#about">About</a>
-                    <a href="Resume.html">Resume</a>
-                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#latest-project">Projects</a></li>
+                    <li><a href="MiniProjects.html">Mini Projects</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                </ul>
             </nav>
         </div>
-        <div class="row header-text-container">
-            <div>
-                <h1>Michael Venvenutti</h1>
-                <p>Bird Wars</p>
-            </div>
-        </div>
     </header>
-    <!-- Porject -->
-    <section id="portfolio">
-        <div class="row">
-            <div class="projects-box">
-                <div>
-                    <h3 class="section">Bird Wars</h3>
-                    <p>A 3rd person fixed shooter inspired by space invaders</p>
-                    <ul>
-                        <li>Role: Gameplay Programmer</li>
-                        <li>Team Size: 5</li>
-                        <li>Project Length: 4 Weeks</li>
-                        <li>Software: Visual Studio,  FLECC, C++, Trello</li>
-                    </ul>
-                    <br />
-                    <br />
-                    <p>
-                        While the first project was tough yet enjoyable, this project created a lot of stress. Making a game from scratch took a lot out of our team. As gameplay programmer
-                        my job was the implemntation of the player, enemies, and game manager. As of today this shows more of our commitment than anything the ability to crunch our project and
-                        make the most with limited time.
-                    </p>
-                    <br />
-                    <a href="https://drive.google.com/file/d/1HbM7VfT_gBtxWTzt54lr2ScC7__ZyRLV/view?usp=drive_link" target="_blank">Download Here</a>
-                    <br />
-                    <br />
-                    <br />
-                    <h4 class="section">Images</h4>
-                    <img align="left" src="../SiteImages/Bird_Wars_Screenshot_1.png" alt="Portfolio Image" class="small-image" />
-                    <img align="right" src="../SiteImages/BirdWars_Screenshot_2.png" alt="Portfolio Image" class="small-image" />
-                    <img align="right" src="../SiteImages/BirdWars_Blender_Screenshot.png" alt="Portfolio Image" class="small-image" />
-                    <br />
-                    <br />
-                    <h4 class="section">Gifs</h4>
-                    <img align="left" src="../SiteImages/Bird_Wars_Build_1.gif" alt="Portfolio Image" class="small-image" />
-                    <img align="right" src="../SiteImages/Bird_Wars_Build_2.gif" alt="Portfolio Image" class="small-image" />
-                    <img align="left" src="../SiteImages/Bird_Wars_Build_3.gif" alt="Portfolio Image" class="small-image" />
-                </div>
+    <main>
+        <section class="contributions">
+            <h2>Contributions</h2>
+            <ul>
+                <li>Performance/Object Pooling</li>
+                <li>Generic Resource/Timers</li>
+                <li>Post Processing</li>
+                <li>Weapon Inheritance</li>
+                <li>Editor Scripts</li>
+                <li>Blockades</li>
+                <li>Powerups/Perks</li>
+            </ul>
+        </section>
+        <section class="project-detail">
+            <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+            <div class="project-discription">
+                <h2>Performace/Object Pooling</h2>
+                <p>Details about the project go here. Text on the left or right.</p>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="references">
+            <h2>References and Inspirations</h2>
+            <p>References and inspirations in a vertical layout.</p>
+            <div class="reference-container">
+                <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+                <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+            </div>
+        </section>
+        <section class="project-detail">
+            <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+            <div class="project-discription">
+                <h2>Project 2</h2>
+                <p>Details about the project go here. Text on the left or right.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Michael Venvenutti</p>
+    </footer>
 </body>
 </html>

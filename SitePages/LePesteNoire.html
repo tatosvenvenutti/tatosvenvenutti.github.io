@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <link rel="stylesheet" href="../SiteCSS/Styles.css" />
-
+    <link rel="stylesheet" href="../SiteCSS/Project.css" />
     <meta charset="utf-8">
     <meta name="description" content="My Portfolio" />
     <meta name="author" content="Venvenutti Porfolio" />
-
     <link rel="icon" type="image/svg" href="../SiteImages/Website_Logo.png" />
-    <!-- Put your site title here -->
-    <title>
-        Michael Venvenutti | Le Peste Noire
-    </title>
+    <title>Michael Venvenutti | Run-n-Dungeon</title>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="row">
+        <div class="header-content">
+            <!--<div class="header-text">
+                <h1>Your Name</h1>
+                <p>Run-N-Dungeon</p>
+            </div>-->
             <nav>
-                <div class="link">
-                    <a href="../index.html">Home</a>
-                    <a href="../index.html#portfolio">Projects</a>
-                    <a href="SitePages/MiniProjects.html">Mini Projects</a>
-                    <a href="../index.html#about">About</a>
-                    <a href="Resume.html">Resume</a>
-                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#latest-project">Projects</a></li>
+                    <li><a href="MiniProjects.html">Mini Projects</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                </ul>
             </nav>
         </div>
-        <div class="row header-text-container">
-            <div>
-                <h1>Michael Venvenutti</h1>
-                <p>Le Peste Noire</p>
-            </div>
-        </div>
     </header>
-    <!-- Porject -->
-    <section id="portfolio">
-        <div class="row">
-            <div class="projects-box">
-                <div>
-                    <h3 class="section">Le Peste Noir</h3>
-                    <p>A 3rd person action adventure game inspired by the soul-genre and Monster Hunter</p>
-                    <ul>
-                        <li>Role: AI/Audio Programmer</li>
-                        <li>Team Size: 6</li>
-                        <li>Project Length: Ongoing</li>
-                        <li>Software: Unreal, C++, Jira</li>
-                    </ul>
-                    <br />
-                    <br />
-                    <p>
-                        This is our current game. Le Peste Noir is a semi-fantasy combat game set place in a medieval world. I am incharge of the audio, as well as ai, This was a daughnting 
-                        task for I never touch behavior trees before. However while working on this project I have been able to make massive changes, with a boss (seen in image 4), Knight and 
-                        witch enemies. However these are right now in development and I will have them to be seen in in the month of April. The game is expected to be avalabe to play in early May.
-                    </p>
-                    <br />
-                    <br />
-                    <br />
-                    <h4 class="section">Images</h4>
-                    <img align="left" src="../SiteImages/LePesteNoire_Screenshot_2.png" alt="Portfolio Image" class="small-image" />
-                    <img align="left" src="../SiteImages/LePesteNoire_Screenshot_3.png" alt="Portfolio Image" class="small-image" />
-                    <img align="middle" src="../SiteImages/LePesteNoire_Screenshot_4.png" alt="Portfolio Image" class="small-image" />
-                    <img align="right" src="../SiteImages/LePesteNoire_Screenshot_5.png" alt="Portfolio Image" class="small-image" />
-                </div>
+    <main>
+        <section class="contributions">
+            <h2>Contributions</h2>
+            <ul>
+                <li>Performance/Object Pooling</li>
+                <li>Generic Resource/Timers</li>
+                <li>Post Processing</li>
+                <li>Weapon Inheritance</li>
+                <li>Editor Scripts</li>
+                <li>Blockades</li>
+                <li>Powerups/Perks</li>
+            </ul>
+        </section>
+        <section class="project-detail">
+            <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+            <div class="project-discription">
+                <h2>Performace/Object Pooling</h2>
+                <p>Details about the project go here. Text on the left or right.</p>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="references">
+            <h2>References and Inspirations</h2>
+            <p>References and inspirations in a vertical layout.</p>
+            <div class="reference-container">
+                <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+                <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+            </div>
+        </section>
+        <section class="project-detail">
+            <img src="../SiteImages/TeamDDM_Screenshot_1.png" alt="Project Image">
+            <div class="project-discription">
+                <h2>Project 2</h2>
+                <p>Details about the project go here. Text on the left or right.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Michael Venvenutti</p>
+    </footer>
 </body>
 </html>

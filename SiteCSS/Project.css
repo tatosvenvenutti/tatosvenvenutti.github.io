@@ -12,9 +12,11 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 2em;
+    text-align: center;
+    font-weight: bold;
 }
 
 .header-text {
@@ -47,12 +49,17 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 1em;
+    gap: 7em;
 }
 
 nav li {
     margin: 0 1em;
 }
+
+    nav li:hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.2);
+    }
 
 nav a {
     color: #fff;
@@ -69,7 +76,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 
 .project-link {
     display: flex;
@@ -135,9 +141,9 @@ footer {
 
 .project-discription {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between;
-    height: 100%; 
+    height: 100%;
 }
 
     .project-discription h2 {
@@ -146,8 +152,32 @@ footer {
     }
 
     .project-discription p {
-        margin: 0 0 20px 0; 
+        margin: 0 0 20px 0;
     }
+
+.contributions {
+    padding: 20px;
+    border-top: 3px solid #444;
+}
+
+    .contributions h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .contributions ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .contributions ul li {
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
 
 .references {
     padding: 20px;
@@ -180,10 +210,19 @@ footer {
         }
 
     .project-discription {
-        align-items: center; 
+        align-items: center;
     }
 
         .project-discription h2 {
-            align-self: center; 
+            align-self: center;
+        }
+
+    .contributions ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .contributions ul li {
+            margin: 10px 0;
         }
 }
