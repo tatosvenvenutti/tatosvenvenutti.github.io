@@ -80,12 +80,13 @@ footer {
 .project-link {
     display: flex;
     align-items: center;
+    align-content: center;
     padding: 20px;
     border-bottom: 1px solid #444;
 }
 
     .project-link img {
-        width: 200px;
+        width: 500px;
         height: auto;
         margin-right: 20px;
     }
@@ -199,7 +200,7 @@ footer {
 }
 
 .references img {
-    width: 400px;
+    width: 600px;
     height: auto;
     margin-right: 40px;
 }
@@ -207,6 +208,12 @@ footer {
     .references img:last-child {
         margin-right: 0;
     }
+
+.refImage img{
+    width: 300px; /* Adjust the width as desired */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Adjust spacing between images */
+}
 
 @media (max-width: 768px) {
     .project-detail {
