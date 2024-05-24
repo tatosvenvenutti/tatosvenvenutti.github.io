@@ -1,7 +1,7 @@
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #464646;
+    color: #000;
     padding: 2em 0;
 }
 
@@ -35,6 +35,10 @@ nav li {
         transition: transform 0.3s ease;
         transform: scale(1.2);
     }
+
+nav ul li a:hover {
+    color: #d49a0d;
+}
 
 nav a {
     color: #fff;
@@ -84,7 +88,7 @@ nav a {
 
     .resume-link:hover {
         transform: scale(1.2);
-        color: rebeccapurple;
+        color: darkgoldenrod;
     }
 
 footer {

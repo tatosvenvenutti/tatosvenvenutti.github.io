@@ -2,17 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #282828;
+    color: #f0ece2;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #464646;
+    color: #f0ece2;
     padding: 2em 0;
 }
 
 .header-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 2em;
     text-align: center;
@@ -21,11 +23,14 @@ header {
 
 .header-text {
     max-width: 50%;
+    justify-content: start;
+    align-items: start;
 }
 
     .header-text h1 {
         margin: 0;
         font-size: 2.5em;
+        padding: 0 6em;
     }
 
     .header-text p {
@@ -60,6 +65,11 @@ nav li {
         transition: transform 0.3s ease;
         transform: scale(1.2);
     }
+
+nav ul li a:hover {
+    color: #d49a0d;
+}
+
 
 nav a {
     color: #fff;
@@ -109,46 +119,76 @@ footer {
 .contributions {
     padding: 20px;
     border-top: 3px solid #444;
+    color: #f0ece2;
 }
 
-    .contributions h2 {
+.projectInfo {
+    padding: 20px;
+    border-top: 3px solid #444;
+    color: #f0ece2;
+    border-bottom: 3px solid #444;
+}
+
+    .projectInfo h2 {
         font-size: 1.5em;
         text-align: center;
     }
 
-    .contributions ul {
+    .projectInfo ul {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        color: #f0ece2;
     }
 
-        .contributions ul li {
-            margin: 0 10px;
-            font-size: 1.2em;
-            transition: transform 0.3s ease, font-size 0.3s ease;
+.contributions h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contributions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #f0ece2;
+}
+
+    .contributions ul li {
+        margin: 0 10px;
+        font-size: 1.2em;
+        transition: transform 0.3s ease, font-size 0.3s ease;
+    }
+
+        .contributions ul li:hover {
+            font-size: 1.5em;
+            transform: scale(1.1);
         }
 
-            .contributions ul li:hover {
-                font-size: 1.5em;
-                transform: scale(1.2);
+        .contributions ul li a {
+            color: #f0ece2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            .contributions ul li a:visited {
+                color: #f0ece2;
             }
 
-            .contributions ul li a {
-                color: black;
-                text-decoration: none;
-                transition: color 0.3s ease;
+            .contributions ul li a:hover {
+                color: #d49a0d;
             }
 
-                .contributions ul li a:visited {
-                    color: black;
-                }
 
-                .contributions ul li a:hover {
-                    color: #555;
-                }
+.projectInfo ul li:hover {
+    font-size: 1.2em; 
+    transform: scale(1); 
+}
 
 .references {
     padding: 20px;
