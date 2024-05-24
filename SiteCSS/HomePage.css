@@ -22,12 +22,14 @@ header {
 
 .header-text {
     max-width: 50%;
+    justify-content: start;
+    align-items: start;
 }
 
     .header-text h1 {
         margin: 0;
         font-size: 2.5em;
-       
+       padding: 0 6em;
     }
 
     .header-text p {
