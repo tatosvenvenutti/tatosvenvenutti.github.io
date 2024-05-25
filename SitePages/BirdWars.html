@@ -49,12 +49,19 @@
                 <img src="../SiteImages/BirdWars_Gameplay.gif" alt="Project Image">
                 <div class="project-discription">
                     <h2>Gameplay Logic</h2>
-                    <p>Details about the project go here. Text on the left or right.</p>
+                    <p>
+                        As gameplay programmer for this project my goal was enemy logic such as movement, player controls such as movement, firing, and inputs. As well as gameplay loop, and prefabs spawning and collision logic.
+                    </p>
+                    <ul>
+                        <li>Implemented enemy movement and spawning</li>
+                        <li>Programmed character controls and projectiles</li>
+                        <li>Generated premade assets as prefabs</li>
+                    </ul>
                 </div>
             </section>
             <section class="references">
-                <h2>References and Inspirations</h2>
-                <p>References and inspirations in a vertical layout.</p>
+                <h2>Reference and Inspiration</h2>
+                <p>Creating a custom engine cause a lot of issues for our team, so we decided to take our insperation from Space Invaders.</p>
                 <div class="reference-container">
                     <div class="refImage">
                         <img src="../SiteImages/SpaceInvader_Example.png" alt="Project Image">
@@ -68,10 +75,14 @@
                 <div class="project-discription">
                     <h2>Enemy Logic</h2>
                     <p>
-                        In Unity, I developed a game manager system that handled pausing, shields for strategic play, reloading mechanics, level progression tracking, and player death states.
+                        The EnemyLogic function handles enemy behavior in the game by processing each enemy entity for collision and movement. 
+                        If an enemy collides with something, it is removed from the game. Otherwise, the function updates its position based on defined movement logic. 
+                        This ensures dynamic and responsive enemy actions during gameplay.
                     </p>
                     <ul>
-                        <li>Implemented a game manager</li>
+                        <li>Collision Detection to removes enemies that collide with other objects</li>
+                        <li>Updatingp enemy positions for both horizontal and vertical movements</li>
+                        <li>Processed each enemy entity using ECS (Entity Component System) architecture.</li>
                     </ul>
                 </div>
             </section>
@@ -80,8 +91,16 @@
             <section class="project-detail">
                 <img src="../SiteImages/BirdWas_PlayerMovement_Code.png" alt="Project Image">
                 <div class="project-discription">
-                    <h2>Player Control</h2>
-                    <p>Details about the project go here. Text on the left or right.</p>
+                    <h2>Player Controls</h2>
+                    <p>
+                        The PlayerLogic function is a player responsive input handling for gameplay.
+                        This function also governs shooting mechanics, regulating the firing rate and coordinating shooting actions based on player input.
+                    </p>
+                    <ul>
+                        <li>Playerinteractions, including movement and shooting mechanics</li>
+                        <li>Utilized timing calculations and responsive input handling for smooth player control</li>
+                        <li>modelling transformations and collision detection</li>
+                    </ul>
                 </div>
             </section>
         </section>
@@ -90,7 +109,15 @@
                 <img src="../SiteImages/Birdwars_ECS_Code.png" alt="Project Image">
                 <div class="project-discription">
                     <h2>Entity Component System</h2>
-                    <p>Details about the project go here. Text on the left or right.</p>
+                    <p>
+                        The Entity-Component-System (ECS) architecture modular and efficient in game development.
+                        I created component functions for enemies and projectiles.
+                    </p>
+                    <ul>
+                        <li>Utilizes ECS for prefab management</li>
+                        <li>Employs flexible entity creation and behavior customization components</li>
+                        <li>Generated standardized entity templates (prefabs)</li>
+                    </ul>
                 </div>
             </section>
         </section>
