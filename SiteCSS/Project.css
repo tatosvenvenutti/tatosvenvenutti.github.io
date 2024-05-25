@@ -106,6 +106,7 @@ footer {
 
 .project-description {
     flex: 1;
+    padding-left: 40px;
 }
 
     .project-description h2 {
@@ -199,6 +200,7 @@ footer {
 .references-text {
     max-width: 45%;
     margin: 0 auto;
+    width: 70em;
 }
 
 .reference-container {
