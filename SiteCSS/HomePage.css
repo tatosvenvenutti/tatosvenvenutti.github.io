@@ -30,13 +30,13 @@ header {
 
     .header-text h1 {
         margin: 0;
-        font-size: 2.5em;
-        padding: 0 6em;
+        font-size: 2.5em; 
+        padding: 0 3em; 
     }
 
     .header-text p {
         margin: 0.5em 0;
-        font-size: 1.2em;
+        font-size: 1.2em; 
     }
 
     .header-text .button {
@@ -55,7 +55,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 7em;
+    gap: 4.67em; 
 }
 
 nav li {
@@ -70,7 +70,6 @@ nav li {
 nav ul li a:hover {
     color: #d49a0d;
 }
-
 
 nav a {
     color: #fff;
@@ -90,7 +89,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25em;
+    gap: 1.67em; 
     flex-wrap: wrap;
 }
 
@@ -103,7 +102,8 @@ main {
 .project-info {
     max-width: 25%;
     text-align: left;
-    margin-left: 2em;
+    margin-left: 1em; 
+    margin-right: 20em;
 }
 
 .project-image-container {
