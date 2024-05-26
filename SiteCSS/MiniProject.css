@@ -9,7 +9,7 @@ body {
 header {
     background-color: #464646;
     color: #f0ece2;
-    padding: 2em 0; 
+    padding: 2em 0;
 }
 
 .header-content {
@@ -29,13 +29,13 @@ header {
 
     .header-text h1 {
         margin: 0;
-        font-size: 2.5em; 
-        padding: 0 6em; 
+        font-size: 2.5em;
+        padding: 0 6em;
     }
 
     .header-text p {
         margin: 0.5em 0;
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .header-text .button {
@@ -93,7 +93,7 @@ img {
 .project-detail {
     display: flex;
     align-items: center;
-    padding: 10px; 
+    padding: 10px;
     border-top: 3px solid #444;
 }
 
@@ -118,7 +118,6 @@ img {
 
     .project-description p {
         margin: 0 0 20px 0;
-        max-width: 80%;
     }
 
 .contributions {
@@ -165,12 +164,12 @@ img {
 
     .contributions ul li {
         margin: 0 10px;
-        font-size: 1.2em; 
+        font-size: 1.2em;
         transition: transform 0.3s ease, font-size 0.3s ease;
     }
 
         .contributions ul li:hover {
-            font-size: 1.5em; 
+            font-size: 1.5em;
             transform: scale(1.1);
         }
 
