@@ -1,12 +1,12 @@
 header {
     background-color: #464646;
-    color: #000;
+    color: #f0ece2;
     padding: 2em 0;
 }
 
 .header-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 2em;
     text-align: center;
@@ -14,16 +14,39 @@ header {
 }
 
 .header-text {
-    width: 100%;
     max-width: 50%;
+    justify-content: start;
+    align-items: start;
 }
+
+    .header-text h1 {
+        margin: 0;
+        font-size: 2.5em;
+        padding: 0 3em;
+    }
+
+    .header-text p {
+        margin: 0.5em 0;
+        font-size: 1.2em;
+    }
+
+    .header-text .button {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.5em 1em;
+        background-color: #555;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1em;
+    }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 7em;
+    gap: 4.67em;
 }
 
 nav li {

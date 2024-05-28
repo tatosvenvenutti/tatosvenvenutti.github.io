@@ -30,13 +30,13 @@ header {
 
     .header-text h1 {
         margin: 0;
-        font-size: 2.5em; 
-        padding: 0 3em; 
+        font-size: 2.5em;
+        padding: 0 3em;
     }
 
     .header-text p {
         margin: 0.5em 0;
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .header-text .button {
@@ -55,7 +55,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 4.67em; 
+    gap: 4.67em;
 }
 
 nav li {
@@ -86,29 +86,20 @@ main {
 }
 
 .project-showcase {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
     justify-content: center;
-    gap: 1.67em; 
-    flex-wrap: wrap;
+    gap: 1.67em;
 }
 
-    .project-showcase img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
 .project-info {
-    max-width: 25%;
     text-align: left;
-    margin-left: 1em; 
-    margin-right: 20em;
+    width: 75%;
 }
 
 .project-image-container {
     position: relative;
-    max-width: 50%;
 }
 
     .project-image-container img {
@@ -190,4 +181,86 @@ footer {
     position: page;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-text {
+        max-width: 80%;
+        padding: 0;
+    }
+
+        .header-text h1 {
+            font-size: 2em;
+            padding: 0;
+        }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    .project-info {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project-image-container {
+        max-width: 100%;
+    }
+
+    .project-item {
+        width: calc(50% - 1em);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 1.5em;
+    }
+
+    .header-text p {
+        font-size: 1em;
+    }
+
+    .project-item {
+        width: calc(100% - 1em);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text {
+        max-width: 100%;
+    }
+
+        .header-text h1 {
+            font-size: 1.2em;
+        }
+
+        .header-text p {
+            font-size: 0.9em;
+        }
+
+        .header-text .button {
+            font-size: 0.9em;
+        }
+
+    .project-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info {
+        order: -1;
+    }
 }

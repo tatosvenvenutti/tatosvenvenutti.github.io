@@ -30,7 +30,7 @@ header {
     .header-text h1 {
         margin: 0;
         font-size: 2.5em;
-        padding: 0 6em;
+        padding: 0 3em;
     }
 
     .header-text p {
@@ -54,7 +54,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 7em;
+    gap: 4.67em;
 }
 
 nav li {
@@ -81,13 +81,15 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: page;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
 img {
-    border: solid #d49a0d 2px
+    border: solid #d49a0d 2px;
+    max-width: 100%;
+    height: auto;
 }
 
 .project-detail {
@@ -95,11 +97,13 @@ img {
     align-items: center;
     padding: 10px;
     border-top: 3px solid #444;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
     .project-detail img {
-        width: 600px;
-        height: auto;
+        width: 100%;
+        max-width: 600px;
         margin: 0 40px;
     }
 
@@ -144,6 +148,7 @@ img {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1em;
         color: #f0ece2;
     }
 
@@ -159,6 +164,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1em;
     color: #f0ece2;
 }
 
@@ -201,17 +207,20 @@ img {
 .references-text {
     max-width: 45%;
     margin: 0 auto;
-    width: 70em;
+    width: 100%;
+    padding: 0 1em;
 }
 
 .reference-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .references img {
-    width: 600px;
-    height: auto;
+    width: 100%;
+    max-width: 600px;
     margin-right: 40px;
 }
 
@@ -220,37 +229,59 @@ img {
     }
 
 .refImage img {
-    width: 400px;
-    height: auto;
+    width: 100%;
+    max-width: 400px;
     margin-right: 20px;
 }
 
 .refImage_2 img {
-    width: 470px;
-    height: auto;
+    width: 100%;
+    max-width: 470px;
     margin-right: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text {
+        padding: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+        .header-text h1 {
+            padding: 0;
+        }
+
     .project-detail {
         flex-direction: column;
+        text-align: center;
     }
 
         .project-detail.reverse {
             flex-direction: column;
         }
 
-        .project-detail img {
-            margin: 0 0 20px 0;
-        }
-
     .project-description {
-        align-items: center;
+        padding: 0;
+        text-align: center;
     }
 
-        .project-description h2 {
-            align-self: center;
-        }
+    .references-text {
+        padding: 0 1em;
+        text-align: center;
+    }
+
+    .reference-container {
+        flex-direction: column;
+    }
+
+    .refImage img, .refImage_2 img {
+        margin: 10px 0;
+    }
 
     .contributions ul {
         flex-direction: column;
@@ -260,4 +291,46 @@ img {
         .contributions ul li {
             margin: 10px 0;
         }
+}
+
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .project-description h2 {
+        font-size: 1.2em;
+    }
+
+    .contributions ul li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 1.5em;
+    }
+
+    .header-text p {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .project-description h2 {
+        font-size: 1em;
+    }
+
+    .contributions ul li {
+        font-size: 0.8em;
+    }
 }
