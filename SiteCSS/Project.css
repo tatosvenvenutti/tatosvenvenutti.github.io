@@ -244,6 +244,13 @@ img {
     margin-right: 20px;
 }
 
+.refImage_3 img {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    margin-right: 20px;
+}
+
 @media (max-width: 1024px) {
     .header-content {
         flex-direction: column;
@@ -285,6 +292,11 @@ img {
     .refImage img, .refImage_2 img {
         margin: 10px 0;
     }
+
+    .refImage img, .refImage_3 img {
+        margin: 20px 0;
+    }
+
 
     .contributions ul {
         flex-direction: column;
