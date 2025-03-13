@@ -6,7 +6,7 @@
     <meta name="description" content="My Portfolio" />
     <meta name="author" content="Venvenutti Porfolio" />
     <link rel="icon" type="image/svg" href="../SiteImages/Website_Logo.png" />
-    <title>Michael Venvenutti | Le Peste Noir</title>
+    <title>Michael Venvenutti | Gameplay Programmer Intern</title>
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <div class="header-text">
                 <h1>Michael Venvenutti</h1>
                 <div class="center-content">
-                    <p>Le Peste Noire</p>
+                    <p>Gameplay Programmer Intern</p>
                 </div>
             </div>
             <nav>
