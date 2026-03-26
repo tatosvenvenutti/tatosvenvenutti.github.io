@@ -349,3 +349,22 @@ img {
         font-size: 0.8em;
     }
 }
+
+.doc-link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    .doc-link:visited {
+        color: #fff;
+        color: #d49a0d;
+    }
+
+    .doc-link:hover {
+        transform: scale(1.3);
+    }
