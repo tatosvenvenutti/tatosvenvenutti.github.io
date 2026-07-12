@@ -1,3 +1,4 @@
+/* Body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #f0ece2;
 }
 
+/* Header Section */
 header {
     background-color: #464646;
     color: #f0ece2;
@@ -49,12 +51,14 @@ header {
         font-size: 1em;
     }
 
+/* Header UI Hover Design Section */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 1.2rem;
     display: flex;
-    gap: 4.67em;
+    gap: 3.67em;
 }
 
 nav li {
@@ -76,280 +80,242 @@ nav a {
     font-size: 1.2em;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+/* Into Section */
+.intro {
     position: relative;
-    bottom: 0;
+    height: 50vh;
     width: 100%;
-}
-
-img {
-    border: solid #d49a0d 2px;
-    max-width: 100%;
-    height: auto;
-}
-
-.project-detail {
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    border-top: 3px solid #444;
 }
 
-    .project-detail img {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        margin: 20px 0;
-    }
-
-    .project-detail.reverse {
-        flex-direction: row-reverse;
-    }
-
-.project-description {
-    flex: 1;
-    padding: 0 1em;
+.intro-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
 }
 
-    .project-description h2 {
-        font-size: 1.5em;
-    }
-
-    .project-description p {
-        margin: 0 0 20px 0;
-        max-width: 80%;
-    }
-
-.contributions {
-    padding: 20px;
-    border-top: 3px solid #444;
-    color: #f0ece2;
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
 }
 
-.projectInfo {
-    padding: 20px;
-    color: #f0ece2;
-    border-bottom: 3px solid #444;
+.intro-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
 }
 
-    .projectInfo h2 {
-        font-size: 1.5em;
+    .intro-content h2 {
+        font-size: 2.5em;
         text-align: center;
     }
 
+    .intro-content ul {
+        list-style: none;
+        flex-direction: column;
+        padding: 15px 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        font-size: 1.5em;
+        color: #f0ece2;
+    }
+
+/* Project Tabs Section */
+.projectInfo {
+    padding: 5px;
+    color: #f0ece2;
+    border-top: 3px solid #444;
+}
+
     .projectInfo ul {
         list-style: none;
-        padding: 0;
+        padding: 15px 0;
         margin: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1em;
         color: #f0ece2;
+        border-bottom: 3px solid #444;
     }
 
-.contributions h2 {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.contributions ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-    color: #f0ece2;
-}
-
-    .contributions ul li {
-        margin: 0 10px;
-        font-size: 1.2em;
-        transition: transform 0.3s ease, font-size 0.3s ease;
-    }
-
-        .contributions ul li:hover {
+        .projectInfo ul li {
+            margin: 0 10px;
             font-size: 1.5em;
-            transform: scale(1.1);
+            transition: transform 0.3s ease, font-size 0.3s ease;
         }
 
-        .contributions ul li a {
-            color: #f0ece2;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+            .projectInfo ul li:hover {
+                font-size: 2em;
+                transform: scale(1);
+            }
 
-            .contributions ul li a:visited {
+            .projectInfo ul li a {
                 color: #f0ece2;
+                text-decoration: none;
+                transition: color 0.3s ease;
             }
 
-            .contributions ul li a:hover {
-                color: #d49a0d;
-            }
+                .projectInfo ul li a:hover {
+                    color: #d49a0d;
+                }
 
-.projectInfo ul li:hover {
-    font-size: 1.2em;
-    transform: scale(1);
-}
-
-.references {
-    padding: 20px;
-    border-top: 3px solid #444;
-    text-align: center;
-}
-
-.references-text {
-    max-width: 100%;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 1em;
-}
-
-.reference-container {
+/* Overview Section */
+.overview {
+    position: relative;
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    align-items: center;
+    border-bottom: 3px solid #444;
 }
 
-.references img {
-    width: 100%;
-    max-width: 600px;
+    .overview video {
+        display: block; /* Important */
+        width: 60%;
+        max-width: 700px;
+        height: auto;
+        margin: 0 auto 30px auto;
+    }
+
+.overview-link {
+    display: block; /* Important */
+    width: 60%;
+    max-width: 700px;
     height: auto;
-    margin-right: 40px;
+    margin: 0 auto 30px auto;
 }
 
-    .references img:last-child {
-        margin-right: 0;
-    }
-
-.refImage img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-right: 20px;
+.overview-content {
+    text-align: center;
+    color: white;
 }
 
-.refImage_2 img {
-    width: 100%;
-    max-width: 470px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.refImage_3 img {
-    width: 100%;
-    max-width: 470px;
-    height: auto;
-    margin-right: 20px;
-}
-
-@media (max-width: 1024px) {
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-text {
-        padding: 0;
+    .overview-content p {
         text-align: center;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        font-size: 1.0em;
+        color: #f0ece2;
     }
 
-        .header-text h1 {
-            padding: 0;
-        }
-
-    .project-detail {
-        flex-direction: column;
-        text-align: center;
-    }
-
-        .project-detail.reverse {
-            flex-direction: column;
-        }
-
-    .project-description {
-        padding: 0;
-        text-align: center;
-    }
-
-    .references-text {
-        padding: 0 1em;
-        text-align: center;
-    }
-
-    .reference-container {
-        flex-direction: column;
-    }
-
-    .refImage img, .refImage_2 img {
-        margin: 10px 0;
-    }
-
-    .refImage img, .refImage_3 img {
-        margin: 20px 0;
-    }
-
-
-    .contributions ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-        .contributions ul li {
-            margin: 10px 0;
-        }
-}
-
-@media (max-width: 768px) {
-    .header-text h1 {
-        font-size: 2em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5em;
-    }
-
-    .project-description h2 {
+    .overview-content ul {
+        list-style: none;
+        flex-direction: row;
+        padding: 15px 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
         font-size: 1.2em;
+        color: #f0ece2;
     }
 
-    .contributions ul li {
-        font-size: 1em;
-    }
+/* Contibution Section */
+.contribution {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    border-bottom: 3px solid #444;
 }
 
-@media (max-width: 480px) {
-    .header-text h1 {
-        font-size: 1.5em;
-    }
-
-    .header-text p {
-        font-size: 1em;
-    }
-
-    nav a {
-        font-size: 1em;
-    }
-
-    .project-description h2 {
-        font-size: 1em;
-    }
-
-    .contributions ul li {
-        font-size: 0.8em;
-    }
+/* Contribution Dectription */
+.contribution-description {
+    flex: 1;
 }
 
+    .contribution-description h2 {
+        margin-bottom: 20px;
+    }
+
+    .contribution-description ul {
+        margin-top: 20px;
+    }
+
+/* Contribution Tabs */
+.gallery-section {
+    flex: 1;
+}
+
+.gallery-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+    .gallery-tabs button {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+
+    .gallery-tabs h2 {
+        min-width: 220px;
+        text-align: center;
+    }
+
+
+/* Contibution Gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainImage {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+    .thumbnails img {
+        width: 100px;
+        cursor: pointer;
+        border: 3px solid transparent;
+        transition: .2s;
+    }
+
+        .thumbnails img:hover {
+            transform: scale(1.05);
+        }
+
+        .thumbnails img.active {
+            border-color: gold;
+        }
+
+/* Document Link Section */
 .doc-link {
     color: #fff;
     text-decoration: none;
@@ -367,4 +333,17 @@ img {
 
     .doc-link:hover {
         transform: scale(1.3);
+        color: #d49a0d;
     }
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
