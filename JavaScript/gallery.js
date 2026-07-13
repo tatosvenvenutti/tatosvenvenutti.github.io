@@ -27,19 +27,76 @@ const projects = {
         }
     ],
 
-    redWater: [
+    combatDesign: [
         {
             name: "Gameplay",
             images: [
-                "../SiteImages/CowTownGames/RedWater/Gameplay1.png",
-                "../SiteImages/CowTownGames/RedWater/Gameplay2.png"
+                "../SiteVideos/LePesteNoire/CombatDesign/InGame/LPN_Doctor_Attacks.gif",
+                "../SiteVideos/LePesteNoire/CombatDesign/InGame/LPN_Dual_Attack.gif",
+                "../SiteVideos/LePesteNoire/CombatDesign/InGame/LPN_Hammer_Attack.gif"
+            ]
+        },
+        {
+            name: "Refrences",
+            images: [
+                "../SiteImages/LePesteNoire/CombatDesign/Inspiration/Vindictus_Combat.png",
+                "../SiteImages/LePesteNoire/CombatDesign/Inspiration/MHW_Combo.png"
+            ]
+        }
+    ],
+
+    knights: [
+        {
+            name: "Gameplay",
+            images: [
+                "../SiteImages/LePesteNoire/Knights/InGame/LPN_Screenshot_AI_1.png",
+                "../SiteVideos/LePesteNoire/Knights/LPN_Knight.gif"
+            ]
+        },
+        {
+            name: "Refrences",
+            images: [
+                "../SiteImages/LePesteNoire/Knights/Refrences/DS3_LothricK.png",
+                "../SiteImages/LePesteNoire/Knights/Refrences/DS3_LothricS.png"
             ]
         },
         {
             name: "Blueprint",
             images: [
-                "../SiteImages/CowTownGames/RedWater/Blueprint1.png",
-                "../SiteImages/CowTownGames/RedWater/Blueprint2.png"
+                "../SiteImages/LePesteNoire/Knights/Blueprint/LPN_Knight_1.png",
+                "../SiteImages/LePesteNoire/Knights/Blueprint/LPN_Knight_2.png",
+                "../SiteImages/LePesteNoire/Knights/Blueprint/LPN_Knight_3.png"
+            ]
+        },
+        {
+            name: "Behavior Tree",
+            images: [
+                "../SiteImages/LePesteNoire/Knights/BehaviorTree/LPN_Knight_BT.png"
+            ]
+        }
+    ],
+
+    kraken: [
+        {
+            name: "Gameplay",
+            images: [
+                "../SiteVideos/LePesteNoire/Boss/LPN_Kraken.gif",
+                "../SiteVideos/LePesteNoire/Boss/LPN_Guard_Break.gif"
+            ]
+        },
+        {
+            name: "Behavior Tree",
+            images: [
+                "../SiteImages/LePesteNoire/Boss/BehaviorTree/LPN_Kraken_BT.png"
+            ]
+        }
+    ],
+
+    ability: [
+        {
+            name: "Gameplay",
+            images: [
+                "../SiteVideos/LePesteNoire/PlayerAbility/LPN_Super_Attack.gif"
             ]
         }
     ]
@@ -157,19 +214,49 @@ class Gallery {
 }
 
 // Star Wars Gallery
-new Gallery(
-    document.getElementById("starWars"),
-    projects.starWars
-);
+if (document.getElementById("starWars")) {
+    new Gallery(
+        document.getElementById("starWars"),
+        projects.starWars
+    );
+}
 
 // Alpha Tycoon Gallery
-new Gallery(
-    document.getElementById("alphaTycoon"),
-    projects.alphaTycoon
-);
+if (document.getElementById("alphaTycoon")) {
+    new Gallery(
+        document.getElementById("alphaTycoon"),
+        projects.alphaTycoon
+    );
+}
 
-// Red Water Gallery
-new Gallery(
-    document.getElementById("redWater"),
-    projects.redWater
-);
+// Combat Design Gallery
+if (document.getElementById("combatDesign")) {
+    new Gallery(
+        document.getElementById("combatDesign"),
+        projects.combatDesign
+    );
+}
+
+// Knights Gallery
+if (document.getElementById("knights")) {
+    new Gallery(
+        document.getElementById("knights"),
+        projects.knights
+    );
+}
+
+// Kraken Gallery
+if (document.getElementById("kraken")) {
+    new Gallery(
+        document.getElementById("kraken"),
+        projects.kraken
+    );
+}
+
+// Player Ability Gallery
+if (document.getElementById("ability")) {
+    new Gallery(
+        document.getElementById("ability"),
+        projects.ability
+    );
+}

@@ -16,7 +16,7 @@
             <div class="header-text">
                 <h1>Michael Venvenutti</h1>
                 <div class="center-content">
-                    <p>Cow Town Games - Project Red Water</p>
+                    <p>Le Peste Noire</p>
                 </div>
             </div>
             <nav>
@@ -32,15 +32,15 @@
     <main>
         <!-- Project Introduction -->
         <div class="intro">
-            <img class="intro-image" src="../SiteImages/CowTownGames/CowTownGames.png" alt="Background">
+            <img class="intro-image" src="../SiteImages/LePesteNoire/Gallery/LPN_Screenshot_1.png" alt="Background">
             <!-- Dark Overlay -->
             <div class="overlay"></div>
             <div class="intro-content">
                 <h2>Role: Gameplay Programmer</h2>
                 <ul>
-                    <li>Time: March 2026 - Present</li>
-                    <li>Freelance</li>
-                    <li>UE5 | C++ | Blueprint</li>
+                    <li>Time: January 2024 - May 2024</li>
+                    <li>Full Time</li>
+                    <li>UE4 | C++ | Blueprint</li>
                 </ul>
             </div>
         </div>
@@ -48,7 +48,10 @@
         <div class="projectInfo">
             <ul>
                 <li><a href="#OverviewSection">Career Overview</a></li>
-                <li><a href="#RedWater">Project Red Water</a></li>
+                <li><a href="#Combat">Combat Design</a></li>
+                <li><a href="#Knights">Knight Enemies</a></li>
+                <li><a href="#Kraken">Kraken Boss</a></li>
+                <li><a href="#Ability">Player Ability</a></li>
             </ul>
         </div>
 
@@ -57,71 +60,105 @@
         <section id="OverviewSection">
             <div class="overview">
                 <div class="overview-content">
-                    <a href="https://www.cowtowngames.com" class="doc-link">
-                        CowTown Games Website
-                    </a>
                     <ul>
-                        <li>Team Size: 15</li>
+                        <li>Team Size: 5</li>
                         <li>Platform: PC</li>
-                        <li>Tool: Unreal Engine, Visual Studio, P4V, Miro, Jira, Clickup</li>
-                        <li>Duration: </li>
+                        <li>Tool: Unreal Engine, Visual Studio</li>
                     </ul>
                     <p>Insert text</p>
-
-                    <!--<video controls loop class="overview-video">
-                    <source src="../SiteVideos/HomePageReel.mp4" type="video/mp4">
-                </video>
-
-                <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/9J9kP4VIAI0?si=3Crd7kMKnP_OPocA"
-                        frameborder="0" allowfullscreen>
-                </iframe>-->
+                    <video controls loop class="overview-video">
+                        <source src="../SiteVideos/HomePageReel.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </section>
 
-        <!-- Red Water Index -->
-        <section id="RedWater" class="contribution">
+        <!-- Combat Design Index -->
+        <section id="Combat" class="contribution">
             <!-- Description -->
             <div class="contribution-description">
-                <h2>My Contributions</h2>
+                <h2>Combat Design</h2>
                 <p>
-                    During my time at Epic Games I implemented dialogue systems,
-                    quest mechanics, and UI systems using Verse. I also prototyped
-                    gameplay features for internal projects.
+                    The goal was to emulate Vindictus-style combat, focusing on weight-based and fluid slashing motions.
+                    With the help of my fantastic team, our goal was to create a large world like Elden Ring, with the combo strings of Monster Hunter and the fluidity of Vindictus.
+                    This allowed a more fluid combat experiance and with camera motion, vfx, and audio to enchance the gameplay.
+                </p>
+            </div>
+
+            <!-- Gallery -->
+            <section class="project-gallery" id="combatDesign">
+                <div class="gallery-tabs">
+                    <button class="previous">&#10094;</button>
+                    <h2 class="categoryTitle"></h2>
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="gallery">
+                    <img class="mainImage">
+                    <div class="thumbnails"></div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Knight Enemies Index -->
+        <section id="Knights" class="contribution">
+            <!-- Description -->
+            <div class="contribution-description">
+                <h2>Knight Enemies</h2>
+                <p>
+                    My role as gameplay programmer was to implement a majority of enemies.
+                    The goal was for a varity of medival knights with a wide spread arsenal.
+                    This caused the player to be constanly aware of their surroundings.
                 </p>
                 <ul>
-                    <li>Implemented Dialogue System</li>
-                    <li>Created Quest Framework</li>
-                    <li>Developed UI Systems</li>
-                    <li>Collaborated with Designers</li>
-                    <li>Debugged Gameplay Systems</li>
+                    <li>Designed and developed actors and behavior trees</li>
+                    <li>Implemented blocking, combos, charge attacks, and patrolling features in C++</li>
+                    <li>Created customizable weapons, enabling each enemy to have different weapons</li>
                 </ul>
             </div>
 
             <!-- Gallery -->
-            <div class="gallery-section">
-                <!-- Contribution Tabs -->
+            <section class="project-gallery" id="knights">
                 <div class="gallery-tabs">
-                    <button id="previousCategory">
-                        &#10094;
-                    </button>
-                    <h2 id="categoryTitle">
-                        Verse
-                    </h2>
-                    <button id="nextCategory">
-                        &#10095;
-                    </button>
+                    <button class="previous">&#10094;</button>
+                    <h2 class="categoryTitle"></h2>
+                    <button class="next">&#10095;</button>
                 </div>
-
-                <!-- Contribution Gallery -->
                 <div class="gallery">
-                    <img id="mainImage"
-                         alt="Contribution Image">
-                    <div class="thumbnails">
-                    </div>
+                    <img class="mainImage">
+                    <div class="thumbnails"></div>
                 </div>
+            </section>
+        </section>
+
+        <!-- Kraken Index -->
+        <section id="Kraken" class="contribution">
+            <!-- Description -->
+            <div class="contribution-description">
+                <h2>Kraken Boss</h2>
+                <p>
+                    My role as gameplay programmer to program the first boss in the game.
+                    The goal was for a defencive boss that fires projectiles. As the player gets closer the boss responces with a varity of attacks.
+                    This was to provide a back and forth gameplay loop for the player.
+                </p>
+                <ul>
+                    <li>Designed and developed boss and behavior trees</li>
+                    <li>Designed projectile attacks to push players and large sweeping attacks in C++</li>
+                    <li>Created guard breaking system that stuns bosses based on the strength of the players attack</li>
+                </ul>
             </div>
+
+            <!-- Gallery -->
+            <section class="project-gallery" id="kraken">
+                <div class="gallery-tabs">
+                    <button class="previous">&#10094;</button>
+                    <h2 class="categoryTitle"></h2>
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="gallery">
+                    <img class="mainImage">
+                    <div class="thumbnails"></div>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
