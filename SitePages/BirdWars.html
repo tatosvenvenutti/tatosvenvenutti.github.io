@@ -10,11 +10,12 @@
 </head>
 <body>
     <header>
+        <!-- Name in title & selectable tabs -->
         <div class="header-content">
             <div class="header-text">
                 <h1>Michael Venvenutti</h1>
                 <div class="center-content">
-                    <p>Bird Wars</p>
+                    <p>Cow Town Games - Project Red Water</p>
                 </div>
             </div>
             <nav>
@@ -28,115 +29,104 @@
         </div>
     </header>
     <main>
-        <section class="contributions">
-            <div class="projectInfo">
-                <h2>Project Info</h2>
+        <!-- Project Introduction -->
+        <div class="intro">
+            <img class="intro-image" src="../SiteImages/CowTownGames/CowTownGames.png" alt="Background">
+            <!-- Dark Overlay -->
+            <div class="overlay"></div>
+            <div class="intro-content">
+                <h2>Role: Gameplay Programmer</h2>
                 <ul>
-                    <li>Team Size: 5</li>
-                    <li>Role: Gameplay Programmer</li>
-                    <li>Development Time: 1 Month</li>
+                    <li>Time: March 2026 - Present</li>
+                    <li>Freelance</li>
+                    <li>UE5 | C++ | Blueprint</li>
                 </ul>
             </div>
-            <h2>Contributions</h2>
+        </div>
+        <!-- Project Tabs -->
+        <div class="projectInfo">
             <ul>
-                <li><a href="#GameplaySection">Gameplay Logic</a></li>
-                <li><a href="#EnemyLogicSection">Enemy Logic</a></li>
-                <li><a href="#PlayerControlSection">Player Controls</a></li>
-                <li><a href="#ECSSection">Entity Component System</a></li>
+                <li><a href="#OverviewSection">Career Overview</a></li>
+                <li><a href="#RedWater">Project Red Water</a></li>
             </ul>
+        </div>
+
+        <!-- Contibutions -->
+        <!-- Red Water Index -->
+        <section id="OverviewSection">
+            <div class="overview">
+                <div class="overview-content">
+                    <a href="https://www.cowtowngames.com" class="doc-link">
+                        CowTown Games Website
+                    </a>
+                    <ul>
+                        <li>Team Size: 15</li>
+                        <li>Platform: PC</li>
+                        <li>Tool: Unreal Engine, Visual Studio, P4V, Miro, Jira, Clickup</li>
+                        <li>Duration: </li>
+
+                    </ul>
+                    <p>Insert text</p>
+
+                    <!--<video controls loop class="overview-video">
+                        <source src="../SiteVideos/HomePageReel.mp4" type="video/mp4">
+                    </video>
+
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/9J9kP4VIAI0?si=3Crd7kMKnP_OPocA"
+                            frameborder="0" allowfullscreen>
+                    </iframe>-->
+                </div>
+            </div>
         </section>
 
-        <section id="GameplaySection">
-            <section class="project-detail">
-                <img src="../SiteImages/BirdWars_Gameplay.gif" alt="Project Image">
-                <div class="project-description">
-                    <h2>Gameplay Logic</h2>
-                    <p>
-                        As a gameplay programmer for this project my focus was implementing core gameplay systems, including enemy behavior, player movement, firing mechanics, input handling, and collision systems.
-                    </p>
-                    <ul>
-                        <li>Implemented enemy movement and spawning</li>
-                        <li>Programmed character controls and projectiles</li>
-                        <li>Generated premade assets as prefabs</li>
-                    </ul>
+        <!-- Red Water Index -->
+        <section id="RedWater" class="contribution">
+            <!-- Description -->
+            <div class="contribution-description">
+                <h2>My Contributions</h2>
+                <p>
+                    During my time at Epic Games I implemented dialogue systems,
+                    quest mechanics, and UI systems using Verse. I also prototyped
+                    gameplay features for internal projects.
+                </p>
+                <ul>
+                    <li>Implemented Dialogue System</li>
+                    <li>Created Quest Framework</li>
+                    <li>Developed UI Systems</li>
+                    <li>Collaborated with Designers</li>
+                    <li>Debugged Gameplay Systems</li>
+                </ul>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery-section">
+                <!-- Contribution Tabs -->
+                <div class="gallery-tabs">
+                    <button id="previousCategory">
+                        &#10094;
+                    </button>
+                    <h2 id="categoryTitle">
+                        Verse
+                    </h2>
+                    <button id="nextCategory">
+                        &#10095;
+                    </button>
                 </div>
-            </section>
-            <section class="references">
-                <div class="references-text">
-                    <h2>Reference and Inspiration</h2>
-                    <p>Developing a custom engine introduced several technical challenges, so we drew inspiration from Space Invaders..</p>
-                </div>
-                <div class="reference-container">
-                    <div class="refImage">
-                        <img src="../SiteImages/SpaceInvader_Example.png" alt="Project Image">
+
+                <!-- Contribution Gallery -->
+                <div class="gallery">
+                    <img id="mainImage"
+                         alt="Contribution Image">
+                    <div class="thumbnails">
                     </div>
                 </div>
-            </section>
-        </section>
-        <section id="EnemyLogicSection">
-            <section class="project-detail reverse">
-                <img src="../SiteImages/Birdwars_EnemyLogic_Code.png" alt="Project Image">
-                <div class="project-description">
-                    <h2>Enemy Logic</h2>
-                    <p>
-                        The EnemyLogic function processes enemy entities, handling both movement and collision.
-                        Enemies are removed upon collision, otherwise their positions are updated based on movement behavior, ensuring responsive and dynamic gameplay.
-                    </p>
-                    <ul>
-                        <li>Collision detection that removes enemies that collide with other objects</li>
-                        <li>Updating enemy positions for both horizontal and vertical movements</li>
-                        <li>Processed each enemy entity using ECS (Entity Component System) architecture.</li>
-                    </ul>
-                </div>
-            </section>
-        </section>
-        <section id="PlayerControlSection">
-            <section class="project-detail">
-                <img src="../SiteImages/BirdWas_PlayerMovement_Code.png" alt="Project Image">
-                <div class="project-description">
-                    <h2>Player Controls</h2>
-                    <p>
-                        The PlayerLogic function handles responsive player input and core gameplay interactions.
-                        This function also governs shooting mechanics, regulating the firing rate and coordinating shooting actions based on player input.
-                    </p>
-                    <ul>
-                        <li>Player interactions, including movement and shooting mechanics</li>
-                        <li>Utilized timing calculations and responsive input handling for smooth player control</li>
-                        <li>Handling transformations and collision detection</li>
-                    </ul>
-                </div>
-            </section>
-        </section>
-        <section id="ECSSection">
-            <section class="project-detail reverse">
-                <img src="../SiteImages/Birdwars_ECS_Code.png" alt="Project Image">
-                <div class="project-discription">
-                    <h2>Entity Component System</h2>
-                    <p>
-                        The Entity-Component-System (ECS) architecture is modular and efficient for game development.
-                        I implemented component-based systems for enemies and projectiles using ECS architecture.
-                    </p>
-                    <ul>
-                        <li>Utilizes ECS for prefab management</li>
-                        <li>Employs flexible entity creation and behavior customization components</li>
-                        <li>Generated standardized entity templates (prefabs)</li>
-                    </ul>
-                </div>
-            </section>
-        </section>
-        <section id="GallerySection">
-            <section class="references">
-                <h2>Gallery</h2>
-                <div class="refImage_2">
-                    <img src="../SiteImages/Bird_Wars_Build_1.gif" alt="Project Image">
-                    <img src="../SiteImages/Bird_Wars_Build_2.gif" alt="Project Image">
-                    <img src="../SiteImages/BirdWars_Gameplay.gif" alt="Project Image">
-                </div>
-            </section>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Michael Venvenutti</p>
     </footer>
+    <script src="../JavaScript/gallery.js"></script>
 </body>
 </html>

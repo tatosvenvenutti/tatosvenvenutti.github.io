@@ -10,11 +10,12 @@
 </head>
 <body>
     <header>
+        <!-- Name in title & selectable tabs -->
         <div class="header-content">
             <div class="header-text">
                 <h1>Michael Venvenutti</h1>
                 <div class="center-content">
-                    <p>Epic Games - UEFN</p>
+                    <p>Cow Town Games - Project Red Water</p>
                 </div>
             </div>
             <nav>
@@ -28,70 +29,104 @@
         </div>
     </header>
     <main>
-        <section class="contributions">
-            <div class="projectInfo">
-                <h2>Role: Gameplay Programmer Intern</h2>
+        <!-- Project Introduction -->
+        <div class="intro">
+            <img class="intro-image" src="../SiteImages/CowTownGames/CowTownGames.png" alt="Background">
+            <!-- Dark Overlay -->
+            <div class="overlay"></div>
+            <div class="intro-content">
+                <h2>Role: Gameplay Programmer</h2>
                 <ul>
-                    <li>Time: January 2025 - May 2025</li>
+                    <li>Time: March 2026 - Present</li>
+                    <li>Freelance</li>
+                    <li>UE5 | C++ | Blueprint</li>
                 </ul>
             </div>
-            <h2></h2>
+        </div>
+        <!-- Project Tabs -->
+        <div class="projectInfo">
             <ul>
-                <li><a href="#OverviewSection">Career Role</a></li>
-                <li><a href="#UEFNSection">Unreal Editor for Fortnite</a></li>
-                <li><a href="#FortniteCreativeSection">Fortnite Creative</a></li>
+                <li><a href="#OverviewSection">Career Overview</a></li>
+                <li><a href="#RedWater">Project Red Water</a></li>
             </ul>
-        </section>
+        </div>
+
+        <!-- Contibutions -->
+        <!-- Red Water Index -->
         <section id="OverviewSection">
-                <section class="project-detail reverse">
-                    <img src="../SiteImages/EpicGameChpt6Season2.png" alt="Project Image">
-                    <div class="project-description">
-                        <h2>Previous Role</h2>
-                        <p>
-                            I served as a Gameplay Programmer Intern on Fortnite Creative, working alongside the Fortnite Ecosystem team on projects related to Unreal Editor for Fortnite.
-                        </p>
-                        <ul>
-                            <li>Prototyping gameplay mechanics within UEFN and Verse</li>
-                            <li>Collaborated with 3D environmental artists, game designers, and programmers on internal projects.</li>
-                        </ul>
+            <div class="overview">
+                <div class="overview-content">
+                    <a href="https://www.cowtowngames.com" class="doc-link">
+                        CowTown Games Website
+                    </a>
+                    <ul>
+                        <li>Team Size: 15</li>
+                        <li>Platform: PC</li>
+                        <li>Tool: Unreal Engine, Visual Studio, P4V, Miro, Jira, Clickup</li>
+                        <li>Duration: </li>
+
+                    </ul>
+                    <p>Insert text</p>
+
+                    <!--<video controls loop class="overview-video">
+                        <source src="../SiteVideos/HomePageReel.mp4" type="video/mp4">
+                    </video>
+
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/9J9kP4VIAI0?si=3Crd7kMKnP_OPocA"
+                            frameborder="0" allowfullscreen>
+                    </iframe>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Red Water Index -->
+        <section id="RedWater" class="contribution">
+            <!-- Description -->
+            <div class="contribution-description">
+                <h2>My Contributions</h2>
+                <p>
+                    During my time at Epic Games I implemented dialogue systems,
+                    quest mechanics, and UI systems using Verse. I also prototyped
+                    gameplay features for internal projects.
+                </p>
+                <ul>
+                    <li>Implemented Dialogue System</li>
+                    <li>Created Quest Framework</li>
+                    <li>Developed UI Systems</li>
+                    <li>Collaborated with Designers</li>
+                    <li>Debugged Gameplay Systems</li>
+                </ul>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery-section">
+                <!-- Contribution Tabs -->
+                <div class="gallery-tabs">
+                    <button id="previousCategory">
+                        &#10094;
+                    </button>
+                    <h2 id="categoryTitle">
+                        Verse
+                    </h2>
+                    <button id="nextCategory">
+                        &#10095;
+                    </button>
+                </div>
+
+                <!-- Contribution Gallery -->
+                <div class="gallery">
+                    <img id="mainImage"
+                         alt="Contribution Image">
+                    <div class="thumbnails">
                     </div>
-                </section>
-        </section>
-        <section id="UEFNSection">
-            <section class="project-detail">
-                <iframe width="560" height="315" 
-                        src="https://www.youtube.com/embed/_-pceIaOZ_A?list=PLZlv_N0_O1gYWGM_MBeNeH2Jlmx-KOm8z" 
-                        frameborder="0" allowfullscreen>
-                </iframe>
-                <div class="project-description">
-                    <h2>Unreal Editor for Fortnite</h2>
-                    <p>
-                        Unreal Editor for Fortnite (UEFN) is a PC application on the Epic Launcher that allows developers to publish custom experiences and games into Fortnite.
-                        Fortnite and UEFN work together to enable developers to integrate new features directly into the live game.
-                        UEFN and the Verse language allow creators to make experiences across PC and consoles.
-                    </p>
                 </div>
-            </section>
+            </div>
         </section>
-        <section id="FortniteCreativeSection">
-            <section class="project-detail reverse">
-                <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/yaWI4yQ8Xm8?start=1"
-                        frameborder="0" allowfullscreen>
-                </iframe>
-                <div class="project-description">
-                    <h2>Fortnite Creative</h2>
-                    <p>
-                        Fortnite Creative allows users to design games on custom islands.
-                        Creators can build experiences across PC, console, and mobile using private maps where progress is saved.
-                        Players can build and share their own experiences in Fortnite in new ways with friends.
-                    </p>
-                </div>
-            </section>
-    </section>
     </main>
     <footer>
         <p>&copy; 2024 Michael Venvenutti</p>
     </footer>
+    <script src="../JavaScript/gallery.js"></script>
 </body>
 </html>

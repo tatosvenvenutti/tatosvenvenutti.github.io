@@ -268,6 +268,26 @@ nav a {
         gap: 12px;
     }
 
+/* Contribution Image */
+.contribution-image {
+    flex: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2d2d2d;
+    border: 2px solid #444;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,.35);
+}
+
+    .contribution-image img {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 10px;
+    }
+
 /* Contribution Tabs */
 .gallery-section {
     flex: 1;

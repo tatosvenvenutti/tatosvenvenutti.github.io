@@ -10,11 +10,12 @@
 </head>
 <body>
     <header>
+        <!-- Name in title & selectable tabs -->
         <div class="header-content">
             <div class="header-text">
                 <h1>Michael Venvenutti</h1>
                 <div class="center-content">
-                    <p>Le Peste Noire</p>
+                    <p>Cow Town Games - Project Red Water</p>
                 </div>
             </div>
             <nav>
@@ -28,183 +29,104 @@
         </div>
     </header>
     <main>
-        <section class="contributions">
-            <div class="projectInfo">
-                <h2>Project Info</h2>
+        <!-- Project Introduction -->
+        <div class="intro">
+            <img class="intro-image" src="../SiteImages/CowTownGames/CowTownGames.png" alt="Background">
+            <!-- Dark Overlay -->
+            <div class="overlay"></div>
+            <div class="intro-content">
+                <h2>Role: Gameplay Programmer</h2>
                 <ul>
-                    <li>Team Size: 5</li>
-                    <li>Role: Gameplay and Audio Programmer</li>
-                    <li>Development Time: 4 Months</li>
+                    <li>Time: March 2026 - Present</li>
+                    <li>Freelance</li>
+                    <li>UE5 | C++ | Blueprint</li>
                 </ul>
             </div>
-            <h2>Contributions</h2>
+        </div>
+        <!-- Project Tabs -->
+        <div class="projectInfo">
             <ul>
-                <li><a href="#EnemyAISection">Enemy AI</a></li>
-                <li><a href="#CombatDesignSection">Combat Design</a></li>
-                <li><a href="#PlayerAbilitiesSection">Player Abilities</a></li>
-                <li><a href="#AudioDesignSection">Audio Design</a></li>
-                <li><a href="#MinorLevelDesignSection">Minor Level Design</a></li>
-                <li><a href="#MinorUIDesignSection">Minor UI Design</a></li>
-                <li><a href="#GallerySection">Gallery</a></li>
+                <li><a href="#OverviewSection">Career Overview</a></li>
+                <li><a href="#RedWater">Project Red Water</a></li>
             </ul>
-        </section>
-        <section id="EnemyAISection">
-            <section class="project-detail">
-                <img src="../SiteImages/LPN_Knight.gif" alt="Project Image">
-                <div class="project-description">
-                    <h2>Knight AI</h2>
-                    <p>
-                        Originally, our game featured only zombies, but I took the initiative to develop enemy AI systems.
-                        Creating the knights, from their attacks to behavior trees, was immensely satisfying.
-                        I wanted them to have combos, charge attacks, and counters, implementing these systems end-to-end in C++ and behavior trees.
-                    </p>
+        </div>
+
+        <!-- Contibutions -->
+        <!-- Red Water Index -->
+        <section id="OverviewSection">
+            <div class="overview">
+                <div class="overview-content">
+                    <a href="https://www.cowtowngames.com" class="doc-link">
+                        CowTown Games Website
+                    </a>
                     <ul>
-                        <li>Designed and developed actors and behavior trees</li>
-                        <li>Implemented blocking, combos, charge attacks, and patrolling features in C++</li>
-                        <li>Created customizable weapons, enabling each enemy to have different weapons</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="project-detail reverse">
-                <img src="../SiteImages/LPN_Kraken.gif" alt="Project Image">
-                <div class="project-description">
-                    <h2>Boss AI</h2>
-                    <p>
-                        I wanted him to be more defensive and almost territorial, using projectile attacks to pressure the player into advancing and then use large sweeping attacks to make you keep your distance.
-                        This created an almost back-and-forth rhythm of retreating and advancing.
-                    </p>
-                    <ul>
-                        <li>Developed a defensive, territorial boss enemy</li>
-                        <li>Designed projectile attacks to push players and large sweeping attacks to maintain distance</li>
-                        <li>Created a rhythmic gameplay of retreating and advancing for the boss encounter</li>
+                        <li>Team Size: 15</li>
+                        <li>Platform: PC</li>
+                        <li>Tool: Unreal Engine, Visual Studio, P4V, Miro, Jira, Clickup</li>
+                        <li>Duration: </li>
 
                     </ul>
-                </div>
-            </section>
-            <section class="project-detail">
-                <img src="../SiteImages/LPN_Animal.gif" alt="Project Image">
-                <div class="project-description">
-                    <h2>Non-Hostile AI</h2>
-                    <p>
-                        To bring more life to the open world, I expanded the system to include non-hostile animal AI for deer, pigs, wolves, and foxes.
-                    </p>
-                    <ul>
-                        <li>Implemented actors and behavior trees</li>
-                        <li>Developed and integrated AI for deer, pigs, wolves, and foxes to enhance world immersion</li>
-                        <li>Programmed dynamic behaviors to increase environmental realism</li>
-                    </ul>
-                </div>
-            </section>
-        </section>
-        <section id="CombatDesignSection">
-            <section class="references">
-                <div class="references-text">
-                    <h2>References and Inspirations</h2>
-                    <p>With the help of my fantastic team, our goal was to create a large world like Elden Ring, with the combo strings of Monster Hunter and the fluidity of Vindictus.</p>
-                </div>
-                <div class="reference-container">
-                    <div class="refImage">
-                        <img src="../SiteImages/EldenRing_Ref.png" alt="Project Image">
-                        <img src="../SiteImages/MHW_Combo.png" alt="Project Image">
-                        <img src="../SiteImages/Vindictus_Combat.png" alt="Project Image">
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="CombatDesign">
-            <section class="references">
-                <div class="references-text">
-                    <h2>Combat Design</h2>
-                    <p>The goal was to emulate Vindictus-style combat, focusing on weight-based and fluid slashing motions.</p>
-                </div>
-                <div class="reference-container">
-                    <div class="refImage">
-                        <img src="../SiteImages/LPN_Doctor_Attacks.gif" alt="Project Image">
-                        <img src="../SiteImages/LPN_Dual_Attack.gif" alt="Project Image">
-                        <img src="../SiteImages/LPN_Hammer_Attack.gif" alt="Project Image">
-                    </div>
-                </div>
-            </section>
-            <section id="PlayerAbilitiesSection">
-                <section class="project-detail">
-                    <img src="../SiteImages/LPN_Super_Attack.gif" alt="Project Image">
-                    <div class="project-description">
-                        <h2>Player Super</h2>
+                    <p>Insert text</p>
 
-                        <p>
-                            While I helped design the players' abilities, I coded the hammer ability for the first playable character.
-                            This ability delivers a high-impact ground strike using a large hammer.
-                        </p>
-                        <ul>
-                            <li>Designed player abilites including the optional characters</li>
-                            <li>Programmed and developed first playable character  ability</li>
-                            <li>Implemented super meter functionality</li>
-                        </ul>
+                    <!--<video controls loop class="overview-video">
+                        <source src="../SiteVideos/HomePageReel.mp4" type="video/mp4">
+                    </video>
+
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/9J9kP4VIAI0?si=3Crd7kMKnP_OPocA"
+                            frameborder="0" allowfullscreen>
+                    </iframe>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Red Water Index -->
+        <section id="RedWater" class="contribution">
+            <!-- Description -->
+            <div class="contribution-description">
+                <h2>My Contributions</h2>
+                <p>
+                    During my time at Epic Games I implemented dialogue systems,
+                    quest mechanics, and UI systems using Verse. I also prototyped
+                    gameplay features for internal projects.
+                </p>
+                <ul>
+                    <li>Implemented Dialogue System</li>
+                    <li>Created Quest Framework</li>
+                    <li>Developed UI Systems</li>
+                    <li>Collaborated with Designers</li>
+                    <li>Debugged Gameplay Systems</li>
+                </ul>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery-section">
+                <!-- Contribution Tabs -->
+                <div class="gallery-tabs">
+                    <button id="previousCategory">
+                        &#10094;
+                    </button>
+                    <h2 id="categoryTitle">
+                        Verse
+                    </h2>
+                    <button id="nextCategory">
+                        &#10095;
+                    </button>
+                </div>
+
+                <!-- Contribution Gallery -->
+                <div class="gallery">
+                    <img id="mainImage"
+                         alt="Contribution Image">
+                    <div class="thumbnails">
                     </div>
-                </section>
-            </section>
-            <section id="AudioDesignSection">
-                <section class="project-detail reverse">
-                    <img src="../SiteImages/Steps_Example.png" alt="Project Image">
-                    <div class="project-description">
-                        <h2>Audio Design</h2>
-                        <p>
-                            Audio is a crucial part of video games, and I wanted it to be impactful while remaining grounded and immersive. I created different audio cues for character movements based on the roughness and materials.
-                        </p>
-                        <ul>
-                            <li>Finding royalty-free songs and audio</li>
-                            <li>Applied various songs and sound effects to amplify nearby terrain and environment</li>
-                            <li>Implemented a dynamic footstep system via blueprints</li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
-            <section id="MinorLevelDesignSection">
-                <section class="references">
-                    <div class="references-text">
-                        <h2>Minor Level Design</h2>
-                        <p>
-                            I contributed to level design by creating an eerie boss arena for the second encounter.
-                            I took on the task of creating an eerie boss room for the second boss battle.
-                            I added bones and cages rattling around, and designed the boss to drop from the ceiling. Additionally, I created patrolling paths for added challenge.
-                        </p>
-                    </div>
-                    <div class="refImage">
-                        <img src="../SiteImages/LPN_SecondBoss_Mapping.png" alt="Project Image">
-                        <img src="../SiteImages/LPN_FinalBoss_Mapping.png" alt="Project Image">
-                    </div>
-                </section>
-            </section>
-            <section id="MiorUIDesignSection">
-                <section class="project-detail">
-                    <img src="../SiteImages/LPN_UI_Break.gif" alt="Project Image">
-                    <div class="project-description">
-                        <h2>Minor UI Design</h2>
-                        <p>
-                            Even though UI design wasn't my primary role in this project, I assisted my team by designing the boss UI and programming a stun meter into the game.
-                        </p>
-                        <ul>
-                            <li>Designed the boss UI</li>
-                            <li>Programmed and implemented the UI stun meter</li>
-                            <li>Collaborated with the team to integrate UI elements seamlessly</li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
-            <section id="GallerySection">
-                <section class="references">
-                    <h2>Gallery</h2>
-                    <div class="refImage_2">
-                        <img src="../SiteImages/LPN_Knight_BT.png" alt="Project Image">
-                        <img src="../SiteImages/LPN_Kraken_BT.png" alt="Project Image">
-                        <img src="../SiteImages/LPN_Animal_BT.png" alt="Project Image">
-                    </div>
-                </section>
-            </section>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Michael Venvenutti</p>
     </footer>
+    <script src="../JavaScript/gallery.js"></script>
 </body>
 </html>
