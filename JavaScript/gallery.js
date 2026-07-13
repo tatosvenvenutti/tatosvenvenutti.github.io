@@ -1,102 +1,175 @@
-const galleries = [
-    // Star Wars
-    {
-        name: "Verse",
-        images: [
-            "../SiteImages/CowTownGames/RedWater/RedWaterMenu.png",
-            "../SiteImages/CowTownGames/CowTownGames.png",
-            "../SiteImages/CowTownGames/CowTownGames.png"
-        ]
+const projects = {
+
+    starWars: [
+        {
+            name: "Ingame",
+            images: [
+                "../SiteImages/EpicGames/StarWars/InGame/Cantina_Gameplay_1.png",
+                "../SiteImages/EpicGames/StarWars/InGame/Cantina_Gameplay_2.png"
+            ]
+        },
+        {
+            name: "Editor",
+            images: [
+                "../SiteImages/EpicGames/StarWars/Editor/Cantina_Dialog_Device.png",
+                "../SiteImages/EpicGames/StarWars/Editor/Cantina_Quest_Manager_Device.png"
+            ]
+        }
+    ],
+
+    alphaTycoon: [
+        {
+            name: "Gameplay",
+            images: [
+                "../SiteImages/EpicGames/AlphaTycoon/InGame/Alpha_Tycoon.png",
+                "../SiteImages/EpicGames/AlphaTycoon/InGame/AlphaTycoon_Harvester_Upgrade.png"
+            ]
+        }
+    ],
+
+    redWater: [
+        {
+            name: "Gameplay",
+            images: [
+                "../SiteImages/CowTownGames/RedWater/Gameplay1.png",
+                "../SiteImages/CowTownGames/RedWater/Gameplay2.png"
+            ]
+        },
+        {
+            name: "Blueprint",
+            images: [
+                "../SiteImages/CowTownGames/RedWater/Blueprint1.png",
+                "../SiteImages/CowTownGames/RedWater/Blueprint2.png"
+            ]
+        }
+    ]
+
+};
+
+// GALLERY CLASS
+class Gallery {
+
+    constructor(section, galleries) {
+
+        this.section = section;
+        this.galleries = galleries;
+
+        this.currentGallery = 0;
+        this.currentImage = 0;
+
+        // HTML Elements
+        this.mainImage = section.querySelector(".mainImage");
+        this.categoryTitle = section.querySelector(".categoryTitle");
+        this.thumbnailContainer = section.querySelector(".thumbnails");
+
+        this.previousButton = section.querySelector(".previous");
+        this.nextButton = section.querySelector(".next");
+
+        // Button Events
+        this.previousButton.addEventListener("click", () => {
+            this.previousGallery();
+        });
+
+        this.nextButton.addEventListener("click", () => {
+            this.nextGallery();
+        });
+
+        // Load first gallery
+        this.loadGallery();
     }
 
-];
+    loadGallery() {
 
-// HTML Elements
-const mainImage = document.getElementById("mainImage");
-const categoryTitle = document.getElementById("categoryTitle");
-const thumbnailsContainer = document.querySelector(".thumbnails");
+        const gallery = this.galleries[this.currentGallery];
 
-// Current State
-let currentGallery = 0;
-let currentImage = 0;
+        // Change category title
+        this.categoryTitle.textContent = gallery.name;
 
-// Load Gallery
-function loadGallery() {
+        // Reset to first image
+        this.currentImage = 0;
 
-    const gallery = galleries[currentGallery];
+        // Set main image
+        this.mainImage.src = gallery.images[0];
 
-    // Change category title
-    categoryTitle.textContent = gallery.name;
+        // Clear thumbnails
+        this.thumbnailContainer.innerHTML = "";
 
-    // Reset to first image
-    currentImage = 0;
-    mainImage.src = gallery.images[0];
+        // Create thumbnails
+        gallery.images.forEach((image, index) => {
 
-    // Remove old thumbnails
-    thumbnailsContainer.innerHTML = "";
+            const thumb = document.createElement("img");
 
-    // Create new thumbnails
-    gallery.images.forEach((image, index) => {
+            thumb.src = image;
 
-        const thumbnail = document.createElement("img");
+            if (index === 0)
+                thumb.classList.add("active");
 
-        thumbnail.src = image;
+            thumb.addEventListener("click", () => {
 
-        if (index === 0)
-            thumbnail.classList.add("active");
+                this.currentImage = index;
 
-        thumbnail.addEventListener("click", () => {
+                this.updateImage();
 
-            currentImage = index;
+            });
 
-            updateImage();
+            this.thumbnailContainer.appendChild(thumb);
 
         });
 
-        thumbnailsContainer.appendChild(thumbnail);
+    }
 
-    });
+    updateImage() {
+
+        const gallery = this.galleries[this.currentGallery];
+
+        this.mainImage.src = gallery.images[this.currentImage];
+
+        const thumbnails = this.thumbnailContainer.querySelectorAll("img");
+
+        thumbnails.forEach(img => img.classList.remove("active"));
+
+        thumbnails[this.currentImage].classList.add("active");
+
+    }
+
+    previousGallery() {
+
+        this.currentGallery--;
+
+        if (this.currentGallery < 0)
+            this.currentGallery = this.galleries.length - 1;
+
+        this.loadGallery();
+
+    }
+
+    nextGallery() {
+
+        this.currentGallery++;
+
+        if (this.currentGallery >= this.galleries.length)
+            this.currentGallery = 0;
+
+        this.loadGallery();
+
+    }
 
 }
 
-// Update Main Image
-function updateImage() {
+// Star Wars Gallery
+new Gallery(
+    document.getElementById("starWars"),
+    projects.starWars
+);
 
-    const gallery = galleries[currentGallery];
+// Alpha Tycoon Gallery
+new Gallery(
+    document.getElementById("alphaTycoon"),
+    projects.alphaTycoon
+);
 
-    mainImage.src = gallery.images[currentImage];
-
-    const thumbnails = document.querySelectorAll(".thumbnails img");
-
-    thumbnails.forEach(img => img.classList.remove("active"));
-
-    thumbnails[currentImage].classList.add("active");
-
-}
-
-// Previous Gallery
-document.getElementById("previousCategory").addEventListener("click", () => {
-
-    currentGallery--;
-
-    if (currentGallery < 0)
-        currentGallery = galleries.length - 1;
-
-    loadGallery();
-
-});
-
-// Next Gallery
-document.getElementById("nextCategory").addEventListener("click", () => {
-
-    currentGallery++;
-
-    if (currentGallery >= galleries.length)
-        currentGallery = 0;
-
-    loadGallery();
-
-});
-
-// Load first gallery when page opens
-loadGallery();
+// Red Water Gallery
+new Gallery(
+    document.getElementById("redWater"),
+    projects.redWater
+);
