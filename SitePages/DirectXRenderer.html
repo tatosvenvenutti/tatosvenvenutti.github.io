@@ -7,7 +7,7 @@
     <meta name="author" content="Venvenutti Porfolio" />
     <link rel="icon" type="image/svg" href="../SiteImages/Website_Logo.png" />
     <!-- Put your site title here -->
-    <title>Michael Venvenutti | DirectXRenderer</title>
+    <title>Michael Venvenutti | DirectX11 Renderer</title>
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
             <div class="header-text">
                 <h1>Michael Venvenutti</h1>
                 <div class="center-content">
-                    <p>Cow Town Games - Project Red Water</p>
+                    <p>DirectX11 Renderer</p>
                 </div>
             </div>
             <nav>
@@ -32,15 +32,15 @@
     <main>
         <!-- Project Introduction -->
         <div class="intro">
-            <img class="intro-image" src="../SiteImages/CowTownGames/CowTownGames.png" alt="Background">
+            <img class="intro-image" src="../SiteImages/DirectX11Renderer/InGame/LevelRender_Profile.png" alt="Background">
             <!-- Dark Overlay -->
             <div class="overlay"></div>
             <div class="intro-content">
                 <h2>Role: Gameplay Programmer</h2>
                 <ul>
-                    <li>Time: March 2026 - Present</li>
-                    <li>Freelance</li>
-                    <li>UE5 | C++ | Blueprint</li>
+                    <li>Time: July 2023 - August 2023</li>
+                    <li>Full Time</li>
+                    <li>C++ | DirectX</li>
                 </ul>
             </div>
         </div>
@@ -48,7 +48,7 @@
         <div class="projectInfo">
             <ul>
                 <li><a href="#OverviewSection">Career Overview</a></li>
-                <li><a href="#RedWater">Project Red Water</a></li>
+                <li><a href="#Renderer">DirectX11 Renderer</a></li>
             </ul>
         </div>
 
@@ -61,24 +61,23 @@
                         CowTown Games Website
                     </a>
                     <ul>
-                        <li>Team Size: 15</li>
+                        <li>Team Size: 5</li>
                         <li>Platform: PC</li>
-                        <li>Tool: Unreal Engine, Visual Studio, P4V, Miro, Jira, Clickup</li>
-                        <li>Duration: </li>
+                        <li>Tool: Unreal Engine, Visual Studio</li>
                     </ul>
                     <p>Insert text</p>
                     <video controls loop class="overview-video">
-                        <source src="../SiteVideos/HomePageReel.mp4" type="video/mp4">
+                        <source src="../SiteVideos/DirectX11Renderer/DirectX11RendererReel.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </section>
 
-        <!-- Red Water Index -->
-        <section id="RedWater" class="contribution">
+        <!-- Renderer Index -->
+        <section id="Renderer" class="contribution">
             <!-- Description -->
             <div class="contribution-description">
-                <h2>My Contributions</h2>
+                <h2>DirectX11 Renderer</h2>
                 <p>
                     During my time at Epic Games I implemented dialogue systems,
                     quest mechanics, and UI systems using Verse. I also prototyped
@@ -94,28 +93,17 @@
             </div>
 
             <!-- Gallery -->
-            <div class="gallery-section">
-                <!-- Contribution Tabs -->
+            <section class="project-gallery" id="renderer">
                 <div class="gallery-tabs">
-                    <button id="previousCategory">
-                        &#10094;
-                    </button>
-                    <h2 id="categoryTitle">
-                        Verse
-                    </h2>
-                    <button id="nextCategory">
-                        &#10095;
-                    </button>
+                    <button class="previous"></button>
+                    <h2 class="categoryTitle"></h2>
+                    <button class="next"></button>
                 </div>
-
-                <!-- Contribution Gallery -->
                 <div class="gallery">
-                    <img id="mainImage"
-                         alt="Contribution Image">
-                    <div class="thumbnails">
-                    </div>
+                    <img class="mainImage">
+                    <div class="thumbnails"></div>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
     <footer>

@@ -2,7 +2,7 @@ const projects = {
 
     starWars: [
         {
-            name: "Ingame",
+            name: "In-game",
             images: [
                 "../SiteImages/EpicGames/StarWars/InGame/Cantina_Gameplay_1.png",
                 "../SiteImages/EpicGames/StarWars/InGame/Cantina_Gameplay_2.png"
@@ -99,8 +99,110 @@ const projects = {
                 "../SiteVideos/LePesteNoire/PlayerAbility/LPN_Super_Attack.gif"
             ]
         }
-    ]
+    ],
 
+    ui: [
+        {
+            name: "In-Game",
+            images: [
+                "../SiteImages/TeamDDM/UI/InGame/TeamDDM_Screenshot_2.png",
+                "../SiteImages/TeamDDM/UI/InGame/TeamDDM_Profile.png",
+                "../SiteImages/TeamDDM/UI/InGame/TeamDDM_GameManager.png",
+            ]
+        },
+        {
+            name: "Code",
+            images: [
+                "../SiteImages/TeamDDM/UI/Code/TeamDDM_CodeSnippit_2.png"
+            ]
+        }
+    ],
+
+    audio: [
+        {
+            name: "In-Game",
+            images: [
+                "../SiteImages/TeamDDM/Audio/InGame/TeamDDM_Screenshot_4.png"
+            ]
+        },
+        {
+            name: "Code",
+            images: [
+                "../SiteImages/TeamDDM/Audio/Code/TeamDDM_CodeSnippit_3.png"
+            ]
+        }
+    ],
+
+    gamemode: [
+        {
+            name: "In-Game",
+            images: [
+                "../SiteImages/TeamDDM/UI/InGame/TeamDDM_Profile.png",
+                "../SiteImages/TeamDDM/UI/InGame/TeamDDM_GameManager.png"
+            ]
+        },
+        {
+            name: "Code",
+            images: [
+                "../SiteImages/TeamDDM/Gamemode/Code/TeamDDM_CodeSnippit_1.png",
+                "../SiteImages/TeamDDM/Gamemode/Code/TeamDDM_CodeSnippit_4.png"
+            ]
+        }
+    ],
+
+    enemylogic: [
+
+        {
+            name: "In-Game",
+            images: [
+                "../SiteImages/BirdWars/EnemyLogic/InGame/BirdWars_Gameplay_1.png",
+                "../SiteVideos/BirdWars/EnemyLogic/BirdWars_Gameplay.gif"
+
+            ]
+        },
+        {
+            name: "Inspiration",
+            images: [
+                "../SiteImages/BirdWars/Inspiration/SpaceInvader_Example.png"
+
+            ]
+        },
+        {
+            name: "Code",
+            images: [
+                "../SiteImages/BirdWars/EnemyLogic/Code/Birdwars_ECS_Code.png",
+                "../SiteImages/BirdWars/EnemyLogic/Code/Birdwars_EnemyLogic_Code.png"
+            ]
+        }
+    ],
+
+    playerlogic: [
+        {
+            name: "In-Game",
+            images: [
+                "../SiteImages/BirdWars/PlayerLogic/InGame/BirdWars_Gameplay_2.png",
+                "../SiteVideos/BirdWars/PlayerLogic/Bird_Wars_Build_2.gif"
+
+            ]
+        },
+        {
+            name: "Code",
+            images: [
+                "../SiteImages/BirdWars/PlayerLogic/Code/BirdWas_PlayerMovement_Code.png"
+            ]
+        }
+    ],
+
+    renderer: [
+        {
+            name: "In-Engine",
+            images: [
+                "../SiteImages/DirectX11Renderer/InGame/LevelRender_Profile.png",
+                "../SiteImages/DirectX11Renderer/InGame/LevelRender_Stage2.png",
+
+            ]
+        }
+    ],
 };
 
 // GALLERY CLASS
@@ -258,5 +360,53 @@ if (document.getElementById("ability")) {
     new Gallery(
         document.getElementById("ability"),
         projects.ability
+    );
+}
+
+// UI Gallery
+if (document.getElementById("ui")) {
+    new Gallery(
+        document.getElementById("ui"),
+        projects.ui
+    );
+}
+
+// Audio Gallery
+if (document.getElementById("audio")) {
+    new Gallery(
+        document.getElementById("audio"),
+        projects.audio
+    );
+}
+
+// Gamemode Gallery
+if (document.getElementById("gamemode")) {
+    new Gallery(
+        document.getElementById("gamemode"),
+        projects.gamemode
+    );
+}
+
+// Enemy Logic Gallery
+if (document.getElementById("enemylogic")) {
+    new Gallery(
+        document.getElementById("enemylogic"),
+        projects.enemylogic
+    );
+}
+
+// Player Logic Gallery
+if (document.getElementById("playerlogic")) {
+    new Gallery(
+        document.getElementById("playerlogic"),
+        projects.playerlogic
+    );
+}
+
+// Renderer Gallery
+if (document.getElementById("renderer")) {
+    new Gallery(
+        document.getElementById("renderer"),
+        projects.renderer
     );
 }

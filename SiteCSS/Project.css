@@ -184,7 +184,7 @@ nav a {
 }
 
     .overview video {
-        display: block; /* Important */
+        display: block;
         width: 60%;
         max-width: 700px;
         height: auto;
@@ -192,7 +192,7 @@ nav a {
     }
 
 .overview-link {
-    display: block; /* Important */
+    display: block;
     width: 60%;
     max-width: 700px;
     height: auto;
