@@ -175,11 +175,9 @@ nav a {
 
 /* Overview Section */
 .overview {
-    position: relative;
-    overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 50px 0;
     border-bottom: 3px solid #444;
 }
 
@@ -200,31 +198,31 @@ nav a {
 }
 
 .overview-content {
+    width: 90%;
+    max-width: 900px;
+    background: #2d2d2d;
+    border: 2px solid #444;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,.35);
+    padding: 30px;
     text-align: center;
     color: white;
 }
 
     .overview-content p {
         text-align: center;
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
-        font-size: 1.0em;
         color: #f0ece2;
+        line-height: 1.8;
     }
 
     .overview-content ul {
         list-style: none;
-        flex-direction: row;
-        padding: 15px 0;
-        margin: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1em;
-        font-size: 1.2em;
+        padding: 15px 0;
+        margin: 0;
         color: #f0ece2;
     }
 
